@@ -33,7 +33,7 @@ const App = () => {
         <h2>Gallery Snapshot</h2><br></br>
         <form onSubmit={submitHandler}>
           <input size="30" type="text" onChange={changeHandler} value={search}/><br /><br />
-          <input type="submit" name="Search" />
+          <input type="submit" className='btn btn-primary' name="Search" />
         </form>
         <br />
         {data.length>=1?<Gallery data={data}/>:<h4>No Image Loaded</h4>}
